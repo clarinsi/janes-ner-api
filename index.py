@@ -36,7 +36,7 @@ def init():
     for lang in ['sl']: #['hr', 'sl', 'sr']:
         dc['segmenter.' + lang] = lambda: Segmenter(lang)
         dc['tagger.' + lang] = lambda: Tagger(lang, dc['segmenter.' + lang])
-        dc['ner_tagger.' + lang] = lambda: NerTagger(lang)
+        dc['ner_tagger.' + lang] = lambda: NerTagger(lang, dc['tagger.' + lang])
 
 
     print 'Models initialized'

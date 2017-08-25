@@ -306,7 +306,8 @@ class ApiRouter(Blueprint):
                 raise InvalidUsage('Please specify a format')
 
             text = get_text(format, request)
-            tagger = dc['tagger.' + lang]
+            # tagger = dc['tagger.' + lang]
+            tagger = dc['ner_tagger.' + lang]
             print "2"
             result = tagger.tag(text)
             print "3"
