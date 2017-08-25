@@ -1,0 +1,15 @@
+lib/
+lib/*
+assets/users
+venv/*
+src/**/*.pyc
+tools/**/*.pyc
+assets/hr.*
+assets/sr.*
+assets/sl.*
+**/.DS_Store
+assets/lexdb_hr
+assets/lexdb_sr
+assets/lexdb_sl
+.idea
+uploads/
